@@ -13,7 +13,7 @@ def chat_with_gpt3(query, conversation_id):
     }
 
     data = {
-        'model': 'GPT-3.5-Turbo',
+        'model': 'text-davinci-003',
         'messages': [{'role': 'system', 'content': 'You are a helpful assistant.'},
                      {'role': 'user', 'content': query, 'user': conversation_id}]
     }
