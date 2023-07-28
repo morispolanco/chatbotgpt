@@ -6,7 +6,7 @@ import os
 API_KEY = os.getenv('OPENAI_API_KEY')
 
 def chat_with_gpt3(query, conversation_id):
-    url = 'https://api.openai.com/v1/completions'
+    url = 'https://api.openai.com/v1/'
     headers = {
         'Content-Type': 'application/json',
         'Authorization': f'Bearer {API_KEY}'
